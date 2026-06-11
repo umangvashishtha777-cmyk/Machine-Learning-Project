@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 
 # Load your trained model
-model = pickle.load(open("D:\VS Code\Streamlit\model.pkl", "rb"))
+model = pickle.load(open("D:\VS Code\ML Project\model.pkl", "rb"))
 
 # -------------------- CSS Styling --------------------
 st.markdown("""
