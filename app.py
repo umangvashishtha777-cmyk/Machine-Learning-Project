@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 
 # Load your trained model
-model = pickle.load(open("D:\VS Code\ML Project\model.pkl", "rb"))
+model = pickle.load(open("D:\VS Code\ML Project\model (1).pkl", "rb"))
 
 # -------------------- CSS Styling --------------------
 st.markdown("""
@@ -123,11 +123,10 @@ if st.button("Predict House Price"):
     # Data for model
     data = [[medinc, houseage, averooms, aveoccup]]
 
-    # Replace this with your model prediction
-    # prediction = model.predict(data)
+    prediction = model.predict(data)
 
     # Dummy prediction for testing
-    prediction = [250000]
+
 
     st.success(
         f"🏡 Predicted House Price: ${prediction[0]:,.2f}"
